@@ -3,13 +3,13 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Bitcoin Core</source>
-        <translation type="unfinished"/>
+        <source>About AditiCoin Core</source>
+        <translation>अदितिक्वाइन के बारे में </translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Bitcoin Core&lt;/b&gt; version</source>
-        <translation type="unfinished"/>
+        <source>&lt;b&gt;AditiCoin Core&lt;/b&gt; version</source>
+        <translation>अदितिक्वाइन रूप </translation>
     </message>
     <message>
         <location line="+57"/>
@@ -19,7 +19,11 @@ This is experimental software.
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation type="unfinished"/>
+        <translation>यह एक प्रायोगिक सॉफ्टवेयर है।
+
+MIT/X11 सॉफ्टवेयर लाइसेंस के तहत वितरित किया गया है। साथमें जुड़े हुए COPYING फाईल को देखें अथवा http://www.opensource.org/licenses/mit-license.php पर देखें।
+
+इस सॉफ्टवेयरमें ओपनएसएसएल प्रोजेक्ट द्वारा(OpenSSL Project) विकसित ओपनएसएसएल टूलकिट (http://www.openssl.org/), एरिक यंग द्वारा लिखित क्रिप्टोग्राफिक सॉफ्टवेयर (eay@cryptsoft.com) और थॉमस बर्नार्ड द्वारा लिखित UPnP सॉफ्टवेयर शामिल हैं।</translation>
     </message>
     <message>
         <location filename="../utilitydialog.cpp" line="+29"/>
@@ -28,14 +32,8 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The Bitcoin Core developers</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+12"/>
-        <location line="+2"/>
-        <source> (%1-bit)</source>
-        <translation type="unfinished"/>
+        <source>The AditiCoin Core developers</source>
+        <translation>अदितिक्वाइन मुख्य विकासक</translation>
     </message>
 </context>
 <context>
@@ -43,42 +41,42 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location filename="../forms/addressbookpage.ui" line="+30"/>
         <source>Double-click to edit address or label</source>
-        <translation>दो बार क्लिक करे पता या लेबल संपादन करने के लिए !</translation>
+        <translation>पता या लेबल संपादन करने के लिए दो बार क्लिक करे।</translation>
     </message>
     <message>
         <location line="+27"/>
         <source>Create a new address</source>
-        <translation>नया पता लिखिए !</translation>
+        <translation>नया पता लिखिए।</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;New</source>
-        <translation type="unfinished"/>
+        <translation>नया</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>Copy the currently selected address to the system clipboard</source>
-        <translation>चुनिन्दा पते को सिस्टम क्लिपबोर्ड पर कापी करे !</translation>
+        <translation>चुनिन्दा पते को सिस्टम क्लिपबोर्ड पर कापी करें।</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Copy</source>
-        <translation type="unfinished"/>
+        <translation>कापी करें।</translation> 
     </message>
     <message>
         <location line="+52"/>
         <source>C&amp;lose</source>
-        <translation type="unfinished"/>
+        <translation>बंद करें।</translation>
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+74"/>
         <source>&amp;Copy Address</source>
-        <translation>&amp;पता कॉपी करे</translation>
+        <translation>&amp;पता कापी करें।</translation>
     </message>
     <message>
         <location filename="../forms/addressbookpage.ui" line="-41"/>
         <source>Delete the currently selected address from the list</source>
-        <translation type="unfinished"/>
+        <translation>चुनिन्दा पते को सिस्टमसे मिटाए।</translation>
     </message>
     <message>
         <location line="+27"/>
@@ -93,42 +91,42 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-27"/>
         <source>&amp;Delete</source>
-        <translation>&amp;मिटाए !!</translation>
+        <translation>&amp;मिटाए।</translation>
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-30"/>
         <source>Choose the address to send coins to</source>
-        <translation type="unfinished"/>
+        <translation>सिक्के भेजने के लिए पता चुनिए।</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Choose the address to receive coins with</source>
-        <translation type="unfinished"/>
+        <translation>सिक्के पाने के लिए पता चुनिए।</translation>
     </message>
     <message>
         <location line="+5"/>
         <source>C&amp;hoose</source>
-        <translation type="unfinished"/>
+        <translation>चुनिए।</translation>
     </message>
     <message>
         <location line="+6"/>
         <source>Sending addresses</source>
-        <translation type="unfinished"/>
+        <translation>भेजनेका पता</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Receiving addresses</source>
-        <translation type="unfinished"/>
+        <translation>पानेका पता</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>These are your Bitcoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
-        <translation type="unfinished"/>
+        <source>These are your AditiCoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <translation>ये भुगतान भेजने के लिए आपके अदितिक्वाइन पते हैं। हमेशा सिक्के भेजने से पहले राशि और प्राप्त पते की जाँच करें।</translation>
     </message>
     <message>
         <location line="+4"/>
-        <source>These are your Bitcoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
-        <translation type="unfinished"/>
+        <source>These are your Aditicoin addresses for receiving payments. It is recommended to use a new receiving address for each transaction.</source>
+        <translation>ये भुगतान प्राप्त करने के लिए आपके अदितिक्वाइन पते हैं। प्रत्येक लेन-देन के लिए नया रिसीविंग पते का उपयोग करने के लिए सिफारिश की है।</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -619,16 +617,6 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation><numerusform>%n हफ़्ता</numerusform><numerusform>%n हफ्ते</numerusform></translation>
     </message>
     <message>
-        <location line="+0"/>
-        <source>%1 and %2</source>
-        <translation type="unfinished"/>
-    </message>
-    <message numerus="yes">
-        <location line="+0"/>
-        <source>%n year(s)</source>
-        <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
-    </message>
-    <message>
         <location line="+4"/>
         <source>%1 behind</source>
         <translation>%1 पीछे</translation>
@@ -701,7 +689,7 @@ Address: %4
         <translation>वॉलेट एन्क्रिप्टेड है तथा अभी लॉक्ड है</translation>
     </message>
     <message>
-        <location filename="../bitcoin.cpp" line="+435"/>
+        <location filename="../bitcoin.cpp" line="+438"/>
         <source>A fatal error occurred. Bitcoin can no longer continue safely and will quit.</source>
         <translation type="unfinished"/>
     </message>
@@ -762,7 +750,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+56"/>
+        <location line="+63"/>
         <source>(un)select all</source>
         <translation type="unfinished"/>
     </message>
@@ -777,7 +765,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+53"/>
+        <location line="+52"/>
         <source>Amount</source>
         <translation>राशि</translation>
     </message>
@@ -928,7 +916,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+141"/>
+        <location line="+140"/>
         <source>Dust</source>
         <translation type="unfinished"/>
     </message>
@@ -1110,7 +1098,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../utilitydialog.cpp" line="+24"/>
+        <location filename="../utilitydialog.cpp" line="+38"/>
         <source>Bitcoin Core</source>
         <translation type="unfinished"/>
     </message>
@@ -1254,7 +1242,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+122"/>
+        <location line="+6"/>
         <source>Optional transaction fee per kB that helps make sure your transactions are processed quickly. Most transactions are 1 kB.</source>
         <translation type="unfinished"/>
     </message>
@@ -1264,7 +1252,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-131"/>
+        <location line="+31"/>
         <source>Automatically start Bitcoin after logging in to the system.</source>
         <translation type="unfinished"/>
     </message>
@@ -1279,7 +1267,12 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+13"/>
+        <source>Set database cache size in megabytes (default: 25)</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+13"/>
         <source>MB</source>
         <translation type="unfinished"/>
     </message>
@@ -1294,12 +1287,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+107"/>
-        <source>&amp;Spend unconfirmed change (experts only)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+37"/>
+        <location line="+58"/>
         <source>Connect to the Bitcoin network through a SOCKS proxy.</source>
         <translation type="unfinished"/>
     </message>
@@ -1334,17 +1322,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-86"/>
-        <source>W&amp;allet</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+52"/>
-        <source>If you disable the spending of unconfirmed change, the change from a transaction cannot be used until that transaction has at least one confirmation. This also affects how your balance is computed.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+40"/>
+        <location line="+6"/>
         <source>Automatically open the Bitcoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation type="unfinished"/>
     </message>
@@ -1459,17 +1437,17 @@ Address: %4
         <translation>&amp;कैन्सल</translation>
     </message>
     <message>
-        <location filename="../optionsdialog.cpp" line="+70"/>
+        <location filename="../optionsdialog.cpp" line="+67"/>
         <source>default</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+58"/>
+        <location line="+57"/>
         <source>none</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+78"/>
+        <location line="+75"/>
         <source>Confirm options reset</source>
         <translation type="unfinished"/>
     </message>
@@ -1509,13 +1487,18 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-238"/>
+        <location line="-155"/>
+        <source>Unconfirmed:</source>
+        <translation>अपुष्ट :</translation>
+    </message>
+    <message>
+        <location line="-83"/>
         <source>Wallet</source>
         <translation>वॉलेट</translation>
     </message>
     <message>
         <location line="+51"/>
-        <source>Available:</source>
+        <source>Confirmed:</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -1524,12 +1507,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+16"/>
-        <source>Pending:</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+16"/>
+        <location line="+32"/>
         <source>Total of transactions that have yet to be confirmed, and do not yet count toward the spendable balance</source>
         <translation type="unfinished"/>
     </message>
@@ -1676,11 +1654,6 @@ Address: %4
         <location line="-12"/>
         <source>Error: Invalid combination of -regtest and -testnet.</source>
         <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../guiutil.cpp" line="+82"/>
-        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
-        <translation>Bitcoin एड्रेस लिखें (उदाहरण: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -1903,22 +1876,22 @@ Address: %4
 <context>
     <name>ReceiveCoinsDialog</name>
     <message>
-        <location filename="../forms/receivecoinsdialog.ui" line="+107"/>
+        <location filename="../forms/receivecoinsdialog.ui" line="+83"/>
         <source>&amp;Amount:</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-16"/>
+        <location line="-13"/>
         <source>&amp;Label:</source>
         <translation>लेबल:</translation>
     </message>
     <message>
-        <location line="-37"/>
+        <location line="-34"/>
         <source>&amp;Message:</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-20"/>
+        <location line="-17"/>
         <source>Reuse one of the previously used receiving addresses. Reusing addresses has security and privacy issues. Do not use this unless re-generating a payment request made before.</source>
         <translation type="unfinished"/>
     </message>
@@ -1928,30 +1901,27 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+14"/>
-        <location line="+23"/>
+        <location line="+27"/>
+        <source>An optional label to associate with the new receiving address</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+7"/>
         <source>An optional message to attach to the payment request, which will be displayed when the request is opened. Note: The message will not be sent with the payment over the Bitcoin network.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-7"/>
-        <location line="+21"/>
-        <source>An optional label to associate with the new receiving address.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="-7"/>
+        <location line="+7"/>
         <source>Use this form to request payments. All fields are &lt;b&gt;optional&lt;/b&gt;.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+23"/>
-        <location line="+22"/>
+        <location line="+39"/>
         <source>An optional amount to request. Leave this empty or zero to not request a specific amount.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+32"/>
+        <location line="+17"/>
         <source>Clear all fields of the form.</source>
         <translation type="unfinished"/>
     </message>
@@ -1961,17 +1931,17 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+78"/>
-        <source>Requested payments history</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="-98"/>
+        <location line="+36"/>
         <source>&amp;Request payment</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+120"/>
+        <location line="+47"/>
+        <source>Requested payments</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+16"/>
         <source>Show the selected request (does the same as double clicking an entry)</source>
         <translation type="unfinished"/>
     </message>
@@ -1989,21 +1959,6 @@ Address: %4
         <location line="+3"/>
         <source>Remove</source>
         <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../receivecoinsdialog.cpp" line="+38"/>
-        <source>Copy label</source>
-        <translation>लेबल कॉपी करे </translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy message</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Copy amount</source>
-        <translation>कॉपी राशि</translation>
     </message>
 </context>
 <context>
@@ -2106,17 +2061,12 @@ Address: %4
         <source>(no message)</source>
         <translation type="unfinished"/>
     </message>
-    <message>
-        <location line="+8"/>
-        <source>(no amount)</source>
-        <translation type="unfinished"/>
-    </message>
 </context>
 <context>
     <name>SendCoinsDialog</name>
     <message>
         <location filename="../forms/sendcoinsdialog.ui" line="+14"/>
-        <location filename="../sendcoinsdialog.cpp" line="+380"/>
+        <location filename="../sendcoinsdialog.cpp" line="+381"/>
         <location line="+80"/>
         <source>Send Coins</source>
         <translation>सिक्के भेजें|</translation>
@@ -2192,7 +2142,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+164"/>
+        <location line="+115"/>
         <source>Send to multiple recipients at once</source>
         <translation>एक साथ कई प्राप्तकर्ताओं को भेजें</translation>
     </message>
@@ -2202,7 +2152,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-23"/>
+        <location line="+20"/>
         <source>Clear all fields of the form.</source>
         <translation type="unfinished"/>
     </message>
@@ -2212,12 +2162,12 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+22"/>
         <source>Balance:</source>
         <translation>बाकी रकम :</translation>
     </message>
     <message>
-        <location line="-78"/>
+        <location line="+41"/>
         <source>Confirm the send action</source>
         <translation>भेजने की पुष्टि करें</translation>
     </message>
@@ -2227,7 +2177,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="-229"/>
+        <location filename="../sendcoinsdialog.cpp" line="-228"/>
         <source>Confirm send coins</source>
         <translation>सिक्के भेजने की पुष्टि करें</translation>
     </message>
@@ -2240,7 +2190,12 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-121"/>
+        <location line="-136"/>
+        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Bitcoin एड्रेस लिखें (उदाहरण: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
+    </message>
+    <message>
+        <location line="+15"/>
         <source>Copy quantity</source>
         <translation type="unfinished"/>
     </message>
@@ -2290,7 +2245,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+203"/>
+        <location line="+202"/>
         <source>The recipient address is not valid, please recheck.</source>
         <translation type="unfinished"/>
     </message>
@@ -2325,12 +2280,12 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+113"/>
+        <location line="+112"/>
         <source>Warning: Invalid Bitcoin address</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+20"/>
+        <location line="+21"/>
         <source>(no label)</source>
         <translation>(कोई लेबल नही !)</translation>
     </message>
@@ -2340,7 +2295,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-367"/>
+        <location line="-366"/>
         <source>Are you sure you want to send?</source>
         <translation type="unfinished"/>
     </message>
@@ -2350,7 +2305,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+171"/>
+        <location line="+170"/>
         <source>Payment request expired</source>
         <translation type="unfinished"/>
     </message>
@@ -2427,7 +2382,12 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+968"/>
+        <location line="+10"/>
+        <source>A message that was attached to the Bitcoin URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location line="+958"/>
         <source>This is a verified payment request.</source>
         <translation type="unfinished"/>
     </message>
@@ -2437,12 +2397,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+33"/>
-        <source>A message that was attached to the bitcoin: URI which will be stored with the transaction for your reference. Note: This message will not be sent over the Bitcoin network.</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+426"/>
+        <location line="+459"/>
         <source>This is an unverified payment request.</source>
         <translation type="unfinished"/>
     </message>
@@ -2457,6 +2412,11 @@ Address: %4
         <location line="+536"/>
         <source>Memo:</source>
         <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../sendcoinsentry.cpp" line="+1"/>
+        <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
+        <translation>Bitcoin एड्रेस लिखें (उदाहरण: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
 </context>
 <context>
@@ -2495,19 +2455,19 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+7"/>
-        <location line="+210"/>
+        <location line="+10"/>
+        <location line="+213"/>
         <source>Choose previously used address</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-200"/>
-        <location line="+210"/>
+        <location line="-203"/>
+        <location line="+213"/>
         <source>Alt+A</source>
         <translation>Alt-A</translation>
     </message>
     <message>
-        <location line="-200"/>
+        <location line="-203"/>
         <source>Paste address from clipboard</source>
         <translation>Clipboard से एड्रेस paste करें</translation>
     </message>
@@ -2548,12 +2508,12 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <location line="+143"/>
+        <location line="+146"/>
         <source>Clear &amp;All</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-84"/>
+        <location line="-87"/>
         <source>&amp;Verify Message</source>
         <translation type="unfinished"/>
     </message>
@@ -2568,7 +2528,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+37"/>
+        <location line="+40"/>
         <source>Verify the message to ensure it was signed with the specified Bitcoin address</source>
         <translation type="unfinished"/>
     </message>
@@ -2583,37 +2543,43 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../signverifymessagedialog.cpp" line="+30"/>
+        <location filename="../signverifymessagedialog.cpp" line="+29"/>
+        <location line="+3"/>
         <source>Enter a Bitcoin address (e.g. 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</source>
         <translation>Bitcoin एड्रेस लिखें (उदाहरण: 1NS17iag9jJgTHD1VXjvLCEnZuQ3rJDE9L)</translation>
     </message>
     <message>
-        <location line="-1"/>
+        <location line="-2"/>
         <source>Click &quot;Sign Message&quot; to generate signature</source>
         <translation type="unfinished"/>
     </message>
     <message>
+        <location line="+3"/>
+        <source>Enter Bitcoin signature</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
         <location line="+84"/>
-        <location line="+80"/>
+        <location line="+81"/>
         <source>The entered address is invalid.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-80"/>
+        <location line="-81"/>
         <location line="+8"/>
-        <location line="+72"/>
+        <location line="+73"/>
         <location line="+8"/>
         <source>Please check the address and try again.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-80"/>
-        <location line="+80"/>
+        <location line="-81"/>
+        <location line="+81"/>
         <source>The entered address does not refer to a key.</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-72"/>
+        <location line="-73"/>
         <source>Wallet unlock was cancelled.</source>
         <translation type="unfinished"/>
     </message>
@@ -2633,7 +2599,7 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+58"/>
+        <location line="+59"/>
         <source>The signature could not be decoded.</source>
         <translation type="unfinished"/>
     </message>
@@ -2694,11 +2660,6 @@ Address: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>conflicted</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+2"/>
         <source>%1/offline</source>
         <translation type="unfinished"/>
     </message>
@@ -2860,12 +2821,12 @@ Address: %4
         <translation>, अभी तक सफलतापूर्वक प्रसारित नहीं किया गया है</translation>
     </message>
     <message numerus="yes">
-        <location line="-37"/>
+        <location line="-35"/>
         <source>Open for %n more block(s)</source>
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
     <message>
-        <location line="+72"/>
+        <location line="+70"/>
         <source>unknown</source>
         <translation>अज्ञात</translation>
     </message>
@@ -2906,12 +2867,12 @@ Address: %4
         <translation>राशि</translation>
     </message>
     <message>
-        <location line="+78"/>
+        <location line="+59"/>
         <source>Immature (%1 confirmations, will be available after %2)</source>
         <translation type="unfinished"/>
     </message>
     <message numerus="yes">
-        <location line="-21"/>
+        <location line="+16"/>
         <source>Open for %n more block(s)</source>
         <translation type="unfinished"><numerusform></numerusform><numerusform></numerusform></translation>
     </message>
@@ -2921,12 +2882,23 @@ Address: %4
         <translation>खुला है जबतक %1</translation>
     </message>
     <message>
-        <location line="+12"/>
+        <location line="+3"/>
+        <source>Offline (%1 confirmations)</source>
+        <translation>ऑफलाइन ( %1 पक्का करना)</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>Unconfirmed (%1 of %2 confirmations)</source>
+        <translation>अपुष्ट ( %1  मे %2  पक्के  )</translation>
+    </message>
+    <message>
+        <location line="-22"/>
+        <location line="+25"/>
         <source>Confirmed (%1 confirmations)</source>
         <translation>पक्के  ( %1 पक्का करना)</translation>
     </message>
     <message>
-        <location line="+9"/>
+        <location line="-22"/>
         <source>This block was not received by any other nodes and will probably not be accepted!</source>
         <translation>यह ब्लॉक किसी भी और नोड को मिला नही है ! शायद यह ब्लॉक कोई भी नोड स्वीकारे गा नही !</translation>
     </message>
@@ -2936,27 +2908,7 @@ Address: %4
         <translation>जेनरेट किया गया किंतु स्वीकारा नही गया !</translation>
     </message>
     <message>
-        <location line="-21"/>
-        <source>Offline</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Unconfirmed</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Confirming (%1 of %2 recommended confirmations)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Conflicted</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+51"/>
+        <location line="+62"/>
         <source>Received with</source>
         <translation>स्वीकारा गया</translation>
     </message>
@@ -2986,7 +2938,7 @@ Address: %4
         <translation>(लागू नहीं)</translation>
     </message>
     <message>
-        <location line="+190"/>
+        <location line="+199"/>
         <source>Transaction status. Hover over this field to show number of confirmations.</source>
         <translation>ट्रांसेक्शन स्तिथि| पुष्टियों की संख्या जानने के लिए इस जगह पर माउस लायें|</translation>
     </message>
@@ -3252,12 +3204,12 @@ Address: %4
 <context>
     <name>bitcoin-core</name>
     <message>
-        <location filename="../bitcoinstrings.cpp" line="+223"/>
+        <location filename="../bitcoinstrings.cpp" line="+221"/>
         <source>Usage:</source>
         <translation>खपत :</translation>
     </message>
     <message>
-        <location line="-55"/>
+        <location line="-54"/>
         <source>List commands</source>
         <translation>commands की लिस्ट बनाएं</translation>
     </message>
@@ -3312,12 +3264,12 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-150"/>
+        <location line="-148"/>
         <source>Number of seconds to keep misbehaving peers from reconnecting (default: 86400)</source>
         <translation type="unfinished"/>
     </message>
@@ -3337,17 +3289,17 @@ Address: %4
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+81"/>
+        <location line="+80"/>
         <source>Run in the background as a daemon and accept commands</source>
         <translation>बैकग्राउंड में डेमॉन बन कर रन करे तथा कमांड्स स्वीकार करें </translation>
     </message>
     <message>
-        <location line="+40"/>
+        <location line="+39"/>
         <source>Use the test network</source>
         <translation>टेस्ट नेटवर्क का इस्तेमाल करे </translation>
     </message>
     <message>
-        <location line="-120"/>
+        <location line="-118"/>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation type="unfinished"/>
     </message>
@@ -3478,11 +3430,6 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+5"/>
-        <source>Clear list of wallet transactions (diagnostic tool; implies -rescan)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>Connect only to the specified node(s)</source>
         <translation type="unfinished"/>
     </message>
@@ -3693,11 +3640,6 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+2"/>
-        <source>Spend unconfirmed change when sending transactions (default: 1)</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>Start Bitcoin server</source>
         <translation type="unfinished"/>
     </message>
@@ -3747,12 +3689,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-80"/>
+        <location line="-79"/>
         <source>Imports blocks from external blk000??.dat file</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-106"/>
+        <location line="-105"/>
         <source>Execute command when a relevant alert is received or we see a really long fork (%s in cmd is replaced by message)</source>
         <translation type="unfinished"/>
     </message>
@@ -3772,7 +3714,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+90"/>
+        <location line="+89"/>
         <source>Information</source>
         <translation>जानकारी</translation>
     </message>
@@ -3842,7 +3784,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+6"/>
         <source>System error: </source>
         <translation type="unfinished"/>
     </message>
@@ -3888,11 +3830,6 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
     </message>
     <message>
         <location line="+2"/>
-        <source>Zapping all transactions from wallet...</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>version</source>
         <translation>संस्करण</translation>
     </message>
@@ -3902,32 +3839,32 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-60"/>
+        <location line="-58"/>
         <source>Password for JSON-RPC connections</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-71"/>
+        <location line="-70"/>
         <source>Allow JSON-RPC connections from specified IP address</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+81"/>
+        <location line="+80"/>
         <source>Send commands to node running on &lt;ip&gt; (default: 127.0.0.1)</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-133"/>
+        <location line="-132"/>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+163"/>
+        <location line="+161"/>
         <source>Upgrade wallet to latest format</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-25"/>
+        <location line="-24"/>
         <source>Set key pool size to &lt;n&gt; (default: 100)</source>
         <translation type="unfinished"/>
     </message>
@@ -3937,12 +3874,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+39"/>
+        <location line="+38"/>
         <source>Use OpenSSL (https) for JSON-RPC connections</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-31"/>
+        <location line="-30"/>
         <source>Server certificate file (default: server.cert)</source>
         <translation type="unfinished"/>
     </message>
@@ -3952,7 +3889,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+16"/>
         <source>This help message</source>
         <translation type="unfinished"/>
     </message>
@@ -3962,12 +3899,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-109"/>
+        <location line="-107"/>
         <source>Allow DNS lookups for -addnode, -seednode and -connect</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+61"/>
+        <location line="+60"/>
         <source>Loading addresses...</source>
         <translation>पता पुस्तक आ रही है...</translation>
     </message>
@@ -3982,12 +3919,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+99"/>
+        <location line="+98"/>
         <source>Wallet needed to be rewritten: restart Bitcoin to complete</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-101"/>
+        <location line="-100"/>
         <source>Error loading wallet.dat</source>
         <translation type="unfinished"/>
     </message>
@@ -3997,7 +3934,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+57"/>
+        <location line="+56"/>
         <source>Unknown network specified in -onlynet: &apos;%s&apos;</source>
         <translation type="unfinished"/>
     </message>
@@ -4007,7 +3944,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-103"/>
+        <location line="-101"/>
         <source>Cannot resolve -bind address: &apos;%s&apos;</source>
         <translation type="unfinished"/>
     </message>
@@ -4017,7 +3954,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+49"/>
+        <location line="+48"/>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation type="unfinished"/>
     </message>
@@ -4037,7 +3974,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation>ब्लॉक इंडेक्स आ रहा है...</translation>
     </message>
     <message>
-        <location line="-63"/>
+        <location line="-62"/>
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation type="unfinished"/>
     </message>
@@ -4047,12 +3984,12 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+96"/>
+        <location line="+95"/>
         <source>Loading wallet...</source>
         <translation>वॉलेट आ रहा है...</translation>
     </message>
     <message>
-        <location line="-57"/>
+        <location line="-56"/>
         <source>Cannot downgrade wallet</source>
         <translation type="unfinished"/>
     </message>
@@ -4062,7 +3999,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="+68"/>
+        <location line="+67"/>
         <source>Rescanning...</source>
         <translation>रि-स्केनी-इंग...</translation>
     </message>
@@ -4072,17 +4009,17 @@ for example: alertnotify=echo %%s | mail -s &quot;Bitcoin Alert&quot; admin@foo.
         <translation>लोड हो गया|</translation>
     </message>
     <message>
-        <location line="+86"/>
+        <location line="+85"/>
         <source>To use the %s option</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location line="-78"/>
+        <location line="-77"/>
         <source>Error</source>
         <translation>भूल</translation>
     </message>
     <message>
-        <location line="-36"/>
+        <location line="-35"/>
         <source>You must set rpcpassword=&lt;password&gt; in the configuration file:
 %s
 If the file does not exist, create it with owner-readable-only file permissions.</source>

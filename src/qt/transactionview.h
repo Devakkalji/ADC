@@ -6,7 +6,6 @@
 #define TRANSACTIONVIEW_H
 
 #include <QWidget>
-#include "guiutil.h"
 
 class TransactionFilterProxy;
 class WalletModel;
@@ -45,14 +44,6 @@ public:
         Range
     };
 
-    enum ColumnWidths {
-      STATUS_COLUMN_WIDTH = 23,
-      DATE_COLUMN_WIDTH = 120,
-      TYPE_COLUMN_WIDTH = 120,
-      AMOUNT_MINIMUM_COLUMN_WIDTH = 120,
-      MINIMUM_COLUMN_WIDTH = 23
-    };
-
 private:
     WalletModel *model;
     TransactionFilterProxy *transactionProxyModel;
@@ -70,10 +61,6 @@ private:
     QDateTimeEdit *dateTo;
 
     QWidget *createDateRangeWidget();
-
-    GUIUtil::TableViewLastColumnResizingFixer *columnResizingFixer;
-
-    virtual void resizeEvent(QResizeEvent* event);
 
 private slots:
     void contextualMenu(const QPoint &);

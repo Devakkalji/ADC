@@ -25,17 +25,30 @@ Once you've got the right hardware and software:
     mkdir gitian-builder/inputs
     cd gitian-builder/inputs
 
-    # Create base images
-    cd gitian-builder
-    bin/make-base-vm --suite precise --arch i386
-    bin/make-base-vm --suite precise --arch amd64
-    cd ..
-
     # Get inputs (see doc/release-process.md for exact inputs needed and where to get them)
     ...
+    cd ../..
 
-    # For further build instructions see doc/release-notes.md
-    ...
+    cd gitian-builder
+    bin/make-base-vm --arch i386
+    bin/make-base-vm --arch amd64
+    cd ..
+
+    # Build Linux release:
+    cd bitcoin
+    git pull
+    cd ../gitian-builder
+    git pull
+    ./bin/gbuild --commit bitcoin=HEAD ../bitcoin/contrib/gitian-descriptors/gitian-linux.yml
+
+    # Build Win32 dependencies: (only needs to be done once, or when dependency versions change)
+    ./bin/gbuild --commit bitcoin=HEAD ../bitcoin/contrib/gitian-descriptors/boost-win32.yml
+    ./bin/gbuild --commit bitcoin=HEAD ../bitcoin/contrib/gitian-descriptors/deps-win32.yml
+    ./bin/gbuild --commit bitcoin=HEAD ../bitcoin/contrib/gitian-descriptors/qt-win32.yml
+    ./bin/gbuild --commit bitcoin=HEAD ../bitcoin/contrib/gitian-descriptors/protobuf-win32.yml
+
+    # Build Win32 release:
+    ./bin/gbuild --commit bitcoin=HEAD ../bitcoin/contrib/gitian-descriptors/gitian-win32.yml
 
 ---------------------
 

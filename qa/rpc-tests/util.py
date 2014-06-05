@@ -1,6 +1,3 @@
-# Copyright (c) 2014 The Bitcoin Core developers
-# Distributed under the MIT/X11 software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
 #
 # Helpful routines for regression testing
 #
@@ -55,8 +52,6 @@ def sync_mempools(rpc_connections):
         time.sleep(1)
         
 
-bitcoind_processes = []
-
 def initialize_chain(test_dir):
     """
     Create (or copy from cache) a 200-block-long chain and
@@ -66,6 +61,7 @@ def initialize_chain(test_dir):
 
     if not os.path.isdir(os.path.join("cache", "node0")):
         # Create cache directories, run bitcoinds:
+        bitcoinds = []
         for i in range(4):
             datadir = os.path.join("cache", "node"+str(i))
             os.makedirs(datadir)
@@ -78,7 +74,7 @@ def initialize_chain(test_dir):
             args = [ "bitcoind", "-keypool=1", "-datadir="+datadir ]
             if i > 0:
                 args.append("-connect=127.0.0.1:"+str(START_P2P_PORT))
-            bitcoind_processes.append(subprocess.Popen(args))
+            bitcoinds.append(subprocess.Popen(args))
             subprocess.check_output([ "bitcoin-cli", "-datadir="+datadir,
                                       "-rpcwait", "getblockcount"])
 
@@ -91,6 +87,8 @@ def initialize_chain(test_dir):
                 sys.stderr.write("Error connecting to "+url+"\n")
                 sys.exit(1)
 
+        import pdb; pdb.set_trace()
+
         # Create a 200-block-long chain; each of the 4 nodes
         # gets 25 mature blocks and 25 immature.
         for i in range(4):
@@ -99,17 +97,16 @@ def initialize_chain(test_dir):
         for i in range(4):
             rpcs[i].setgenerate(True, 25)
             sync_blocks(rpcs)
-
-        # Shut them down, and remove debug.logs:
-        stop_nodes(rpcs)
-        wait_bitcoinds()
+        # Shut them down
         for i in range(4):
-            os.remove(debug_log("cache", i))
+            rpcs[i].stop()
 
     for i in range(4):
         from_dir = os.path.join("cache", "node"+str(i))
         to_dir = os.path.join(test_dir,  "node"+str(i))
         shutil.copytree(from_dir, to_dir)
+
+bitcoind_processes = []
 
 def start_nodes(num_nodes, dir):
     # Start bitcoinds, and wait for RPC interface to be up and running:
@@ -126,19 +123,9 @@ def start_nodes(num_nodes, dir):
         rpc_connections.append(AuthServiceProxy(url))
     return rpc_connections
 
-def debug_log(dir, n_node):
-    return os.path.join(dir, "node"+str(n_node), "regtest", "debug.log")
-
-def stop_nodes(nodes):
-    for i in range(len(nodes)):
-        nodes[i].stop()
-    del nodes[:] # Emptying array closes connections as a side effect
-
-def wait_bitcoinds():
-    # Wait for all bitcoinds to cleanly exit
-    for bitcoind in bitcoind_processes:
-        bitcoind.wait()
-    del bitcoind_processes[:]
+def stop_nodes():
+    for process in bitcoind_processes:
+        process.kill()
 
 def connect_nodes(from_connection, node_num):
     ip_port = "127.0.0.1:"+str(START_P2P_PORT+node_num)

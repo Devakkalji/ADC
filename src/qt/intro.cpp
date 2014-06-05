@@ -1,16 +1,14 @@
 // Copyright (c) 2011-2014 The Bitcoin developers
+// Copyright (c) 2014 The AditiCoin Developers
 // Distributed under the MIT/X11 software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #include "intro.h"
 #include "ui_intro.h"
 
-#include "guiutil.h"
-
 #include "util.h"
 
 #include <boost/filesystem.hpp>
-
 #include <QFileDialog>
 #include <QSettings>
 #include <QMessageBox>
@@ -62,7 +60,7 @@ void FreespaceChecker::check()
 {
     namespace fs = boost::filesystem;
     QString dataDirStr = intro->getPathToCheck();
-    fs::path dataDir = GUIUtil::qstringToBoostPath(dataDirStr);
+    fs::path dataDir = fs::path(dataDirStr.toStdString());
     uint64_t freeBytesAvailable = 0;
     int replyStatus = ST_OK;
     QString replyMessage = tr("A new data directory will be created.");
@@ -146,7 +144,7 @@ void Intro::setDataDirectory(const QString &dataDir)
 
 QString Intro::getDefaultDataDirectory()
 {
-    return GUIUtil::boostPathToQString(GetDefaultDataDir());
+    return QString::fromStdString(GetDefaultDataDir().string());
 }
 
 void Intro::pickDataDirectory()
@@ -162,7 +160,7 @@ void Intro::pickDataDirectory()
     /* 2) Allow QSettings to override default dir */
     dataDir = settings.value("strDataDir", dataDir).toString();
 
-    if(!fs::exists(GUIUtil::qstringToBoostPath(dataDir)) || GetBoolArg("-choosedatadir", false))
+    if(!fs::exists(dataDir.toStdString()) || GetBoolArg("-choosedatadir", false))
     {
         /* If current default data directory does not exist, let the user choose one */
         Intro intro;
@@ -178,10 +176,10 @@ void Intro::pickDataDirectory()
             }
             dataDir = intro.getDataDirectory();
             try {
-                fs::create_directory(GUIUtil::qstringToBoostPath(dataDir));
+                fs::create_directory(dataDir.toStdString());
                 break;
             } catch(fs::filesystem_error &e) {
-                QMessageBox::critical(0, tr("Bitcoin"),
+                QMessageBox::critical(0, tr("AditiCoin"),
                     tr("Error: Specified data directory \"%1\" can not be created.").arg(dataDir));
                 /* fall through, back to choosing screen */
             }
@@ -189,12 +187,7 @@ void Intro::pickDataDirectory()
 
         settings.setValue("strDataDir", dataDir);
     }
-    /* Only override -datadir if different from the default, to make it possible to
-     * override -datadir in the bitcoin.conf file in the default data directory
-     * (to be consistent with bitcoind behavior)
-     */
-    if(dataDir != getDefaultDataDirectory())
-        SoftSetArg("-datadir", GUIUtil::qstringToBoostPath(dataDir).string()); // use OS locale for path setting
+    SoftSetArg("-datadir", dataDir.toStdString());
 }
 
 void Intro::setStatus(int status, const QString &message, quint64 bytesAvailable)

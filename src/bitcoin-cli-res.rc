@@ -18,7 +18,7 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "AditiCoin"
-            VALUE "FileDescription",    "AditiCoin-cli (OSS RPC client for AditiCoin)"
+            VALUE "FileDescription",    "aditicoin-cli (OSS RPC client for AditiCoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "aditicoin-cli"
             VALUE "LegalCopyright",     COPYRIGHT_STR

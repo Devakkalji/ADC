@@ -1,7 +1,4 @@
 #!/usr/bin/env python
-# Copyright (c) 2014 The Bitcoin Core developers
-# Distributed under the MIT/X11 software license, see the accompanying
-# file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 # Exercise the listtransactions API
 
@@ -118,7 +115,6 @@ def main():
     check_json_precision()
 
     success = False
-    nodes = []
     try:
         print("Initializing test directory "+options.tmpdir)
         if not os.path.isdir(options.tmpdir):
@@ -128,7 +124,6 @@ def main():
         nodes = start_nodes(2, options.tmpdir)
         connect_nodes(nodes[1], 0)
         sync_blocks(nodes)
-
         run_test(nodes)
 
         success = True
@@ -137,12 +132,12 @@ def main():
         print("Assertion failed: "+e.message)
     except Exception as e:
         print("Unexpected exception caught during testing: "+str(e))
-        traceback.print_tb(sys.exc_info()[2])
+        stack = traceback.extract_tb(sys.exc_info()[2])
+        print(stack[-1])
 
     if not options.nocleanup:
         print("Cleaning up")
-        stop_nodes(nodes)
-        wait_bitcoinds()
+        stop_nodes()
         shutil.rmtree(options.tmpdir)
 
     if success:
